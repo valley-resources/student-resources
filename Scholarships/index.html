@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarships List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main">
+        <div id="sorter">
+            <div class="sort clickable" onclick="sortByName()" id="sort-name">Name</div>
+            <div class="sort clickable" onclick='sortByAmount()' id="sort-amount">Amount</div>
+            <div class="sort clickable" onclick='sortByDate()'id="sort-due-date">Due Date</div>
+        </div>
+        <div class="scholarships">
+            
+        </div>
+    </div>
+    <div style='display: none;' class="scholarship" id="template">
+                <div class='name category'>HI</div>
+                <div class='amount category'>$3000</div>
+                <div class='due-date category'>Never</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

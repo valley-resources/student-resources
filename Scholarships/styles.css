@@ -1,0 +1,97 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main {
+    padding-top: 3%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+#sorter {
+    border: 1px solid black;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sort {
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid black;
+    width: calc(100%/3);
+    height: 100%;
+    display: flex;
+    font-family: header-font;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.scholarships {
+    border: 1px solid black;
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: visible;
+}
+.scholarship {
+    display: flex;
+    width: 100%;
+    height: 5%;
+    align-items: center;
+    justify-content: center;
+}
+.category {
+    display: flex;
+    width: calc(100%/3);
+    height: 100%;
+    align-items: center;
+    font-size: 1.4em;
+    font-family: body-font;
+    justify-content: center;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.name {
+    background-color: #002d62;
+    color: white;
+}
+.amount {
+    color: limegreen;
+    background-color: #b9b7af;
+}
+.due-date {
+    color: white;
+    background-color: #002d62;
+}
+@font-face {
+    font-family: "header-font";
+    src: url('../Arvo-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "header-font-2";
+    src: url('../Helvetica.ttf') format('truetype');
+}
+@font-face {
+    font-family: "body-font";
+    src: url('../Verdana.ttf') format('truetype');
+}
+.clickable {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    color: inherit;
+}
+.clickable:hover {
+    /* filter: brightness(1.2) hue-rotate(20deg); */
+    color: rgb(0, 83, 146);
+}
